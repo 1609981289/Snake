@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width = device-width,initial-scale=1.0" />
+		<meta name="author"content="Chood" />
+		<meta name="keywords" content="贪吃蛇网页版" />
+		<title>贪吃蛇</title>
+		<link rel="icon" href="./img/icon.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+		<style>
+			@import url("css/index.css");
+		</style>
+	</head>
+	<body style="background-image: url(img/bg.jpg); background-size: 100% 110%; overflow: hidden;">
+		<h1 id="head">贪吃蛇</h1>
+		<div id="app"></div>
+		<div id="showMsg" style="background-image: url(img/msg.jpg);background-size: 100% 100%;"></div>
+		<audio id = "bgmusic" src="musics/bgmusic.mp3" autoplay="autoplay"></audio>
+		<p id = "foot">made by Chood</p>
+		<script type="text/javascript" src="js/Game.js" ></script>
+		<script type="text/javascript" src="js/Snake.js" ></script>
+		<script type="text/javascript" src="js/Food.js"></script>
+		<script>
+			//启动游戏脚本 
+			var game = new Game()
+		</script>
+	</body>
+	
+</html>
